@@ -1,0 +1,64 @@
+{
+  "name": "@ylakhdar/rspress-plugin-pretext-breaker",
+  "version": "0.0.1",
+  "description": "Rspress plugin adapter for @ylakhdar/pretext-breaker.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Yassine Lakhdar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ylakhdar/rspress-plugin-pretext-breaker.git"
+  },
+  "homepage": "https://github.com/ylakhdar/rspress-plugin-pretext-breaker#readme",
+  "bugs": {
+    "url": "https://github.com/ylakhdar/rspress-plugin-pretext-breaker/issues"
+  },
+  "keywords": ["rspress", "rspress-plugin", "pretext-breaker", "easter-egg", "breakout", "game"],
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -w -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "pack:dry": "pnpm pack --dry-run",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "pnpm run clean && pnpm run build"
+  },
+  "dependencies": {
+    "@ylakhdar/pretext-breaker": "workspace:^"
+  },
+  "peerDependencies": {
+    "@rspress/core": "^2.0.0",
+    "react": "^18.2.0 || ^19.0.0",
+    "react-dom": "^18.2.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@rspress/core": "2.0.10",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.2.3",
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
+    "typescript": "^5.7.0"
+  },
+  "packageManager": "pnpm@11.1.1+sha512.d1fdf5f73c617b64fa1a56a81c3c8dfe0e966e33a6010aa256b517ae77be21d93e05affc0de1a83b0e4f29d569f68b446ae8f068cd7247c0bb3df0fb4d7bdf9a"
+}
