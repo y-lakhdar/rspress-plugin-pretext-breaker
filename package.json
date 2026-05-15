@@ -13,7 +13,14 @@
   "bugs": {
     "url": "https://github.com/ylakhdar/rspress-plugin-pretext-breaker/issues"
   },
-  "keywords": ["rspress", "rspress-plugin", "pretext-breaker", "easter-egg", "breakout", "game"],
+  "keywords": [
+    "rspress",
+    "rspress-plugin",
+    "pretext-breaker",
+    "easter-egg",
+    "breakout",
+    "game"
+  ],
   "engines": {
     "node": ">=18"
   },
@@ -41,7 +48,14 @@
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "pack:dry": "pnpm pack --dry-run",
     "clean": "rm -rf dist",
-    "prepublishOnly": "pnpm run clean && pnpm run build"
+    "prepublishOnly": "pnpm run clean && pnpm run build",
+    "knip": "knip"
+  },
+  "knip": {
+    "entry": ["src/PretextBreakerGlobalUI.tsx"],
+    "rules": {
+      "duplicates": "off"
+    }
   },
   "dependencies": {
     "@ylakhdar/pretext-breaker": "workspace:^"
@@ -56,6 +70,7 @@
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.2.3",
+    "knip": "^6.13.1",
     "react": "19.2.5",
     "react-dom": "19.2.5",
     "typescript": "^5.7.0"
