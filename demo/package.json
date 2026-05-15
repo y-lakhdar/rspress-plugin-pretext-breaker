@@ -1,0 +1,16 @@
+{
+  "name": "demo",
+  "private": true,
+  "scripts": {
+    "dev": "rspress dev",
+    "build": "rspress build"
+  },
+  "dependencies": {
+    "@ylakhdar/rspress-plugin-pretext-breaker": "workspace:^"
+  },
+  "devDependencies": {
+    "@rspress/core": "2.0.10",
+    "react": "19.2.5",
+    "react-dom": "19.2.5"
+  }
+}
