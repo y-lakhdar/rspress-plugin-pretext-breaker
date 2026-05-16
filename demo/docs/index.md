@@ -2,7 +2,7 @@
 
 `rspress-plugin-pretext-breaker` adds the Pretext Breaker game to an Rspress site. It turns page structure like headings, sidebar items, and outline links into Breakout-style bricks.
 
-If you want the bigger idea behind PreTeXt, start with the official docs: https://pretextbook.org/documentation.html
+If you want the bigger idea behind Pretext, start with [chenglou/pretext](https://github.com/chenglou/pretext).
 
 ## Quick Start
 
