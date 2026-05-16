@@ -5,7 +5,7 @@ import type {
   PretextBreakerGameOptions,
   PretextBreakerLabels,
   PretextBreakerTriggerOptions,
-} from '@ylakhdar/pretext-breaker';
+} from 'pretext-breaker';
 
 export type RspressPretextBreakerDocumentBrickOptions = Omit<
   DocumentBrickSetOptions,

@@ -1,5 +1,5 @@
 import { defineConfig } from '@rspress/core';
-import { pluginPretextBreaker } from '@ylakhdar/rspress-plugin-pretext-breaker';
+import { pluginPretextBreaker } from 'rspress-plugin-pretext-breaker';
 
 export default defineConfig({
   root: 'docs',

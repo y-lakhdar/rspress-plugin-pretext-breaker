@@ -7,7 +7,7 @@ import type { RspressPretextBreakerOptions } from './types';
 const dirname = path.dirname(fileURLToPath(import.meta.url));
 const componentPath = path.join(dirname, 'PretextBreakerGlobalUI.js');
 const require = createRequire(import.meta.url);
-const stylesPath = require.resolve('@ylakhdar/pretext-breaker/styles.css');
+const stylesPath = require.resolve('pretext-breaker/styles.css');
 
 export function pluginPretextBreaker(
   options: RspressPretextBreakerOptions = {},
@@ -15,7 +15,7 @@ export function pluginPretextBreaker(
   const { enabled = true } = options;
 
   return {
-    name: '@ylakhdar/rspress-plugin-pretext-breaker',
+    name: 'rspress-plugin-pretext-breaker',
     globalUIComponents: enabled ? [[componentPath, options]] : [],
     ...(enabled ? { globalStyles: stylesPath } : {}),
   };

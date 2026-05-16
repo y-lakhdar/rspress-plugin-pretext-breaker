@@ -1,4 +1,4 @@
-# @ylakhdar/rspress-plugin-pretext-breaker
+# rspress-plugin-pretext-breaker
 
 Add the Pretext Breaker game to an Rspress site. It turns page structure such as headings, sidebar items, and outline links into Breakout-style bricks.
 
@@ -7,14 +7,14 @@ Add the Pretext Breaker game to an Rspress site. It turns page structure such as
 ## Install
 
 ```bash
-pnpm add @ylakhdar/rspress-plugin-pretext-breaker
+pnpm add rspress-plugin-pretext-breaker
 ```
 
 ## Usage
 
 ```ts
 import { defineConfig } from '@rspress/core';
-import { pluginPretextBreaker } from '@ylakhdar/rspress-plugin-pretext-breaker';
+import { pluginPretextBreaker } from 'rspress-plugin-pretext-breaker';
 
 export default defineConfig({
   plugins: [pluginPretextBreaker()],
@@ -37,7 +37,7 @@ import { defineConfig } from '@rspress/core';
 import {
   pluginPretextBreaker,
   rspressBrickSources,
-} from '@ylakhdar/rspress-plugin-pretext-breaker';
+} from 'rspress-plugin-pretext-breaker';
 
 export default defineConfig({
   plugins: [

@@ -2,7 +2,7 @@ import {
   PretextBreaker,
   type PretextBreakerGameLabels,
   type PretextBreakerGameOptions,
-} from '@ylakhdar/pretext-breaker';
+} from 'pretext-breaker';
 import { rspressBrickSources } from './rspress-brick-sources';
 import type {
   RspressPretextBreakerGameLabels,

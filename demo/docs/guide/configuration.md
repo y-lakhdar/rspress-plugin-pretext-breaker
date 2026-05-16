@@ -4,7 +4,7 @@ Most projects can start with the default setup:
 
 ```ts
 import { defineConfig } from '@rspress/core';
-import { pluginPretextBreaker } from '@ylakhdar/rspress-plugin-pretext-breaker';
+import { pluginPretextBreaker } from 'rspress-plugin-pretext-breaker';
 
 export default defineConfig({
   plugins: [pluginPretextBreaker()],
@@ -26,7 +26,7 @@ import { defineConfig } from '@rspress/core';
 import {
   pluginPretextBreaker,
   rspressBrickSources,
-} from '@ylakhdar/rspress-plugin-pretext-breaker';
+} from 'rspress-plugin-pretext-breaker';
 
 export default defineConfig({
   plugins: [

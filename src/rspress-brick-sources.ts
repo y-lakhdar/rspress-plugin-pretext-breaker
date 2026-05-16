@@ -2,7 +2,7 @@ import {
   contentBrickSelector,
   navigationBrickSelector,
   type DocumentBrickSource,
-} from '@ylakhdar/pretext-breaker';
+} from 'pretext-breaker';
 
 export const rspressNavigationBrickSelector = [
   navigationBrickSelector,

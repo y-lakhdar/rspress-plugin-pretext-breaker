@@ -7,7 +7,7 @@
     "build": "rspress build"
   },
   "dependencies": {
-    "@ylakhdar/rspress-plugin-pretext-breaker": "workspace:^"
+    "rspress-plugin-pretext-breaker": "workspace:^"
   },
   "devDependencies": {
     "@rspress/core": "2.0.10",
