@@ -1,17 +1,17 @@
 {
   "name": "@ylakhdar/rspress-plugin-pretext-breaker",
-  "version": "0.0.1",
-  "description": "Rspress plugin adapter for @ylakhdar/pretext-breaker.",
+  "version": "0.1.0",
+  "description": "Add the Pretext Breaker game to an Rspress site.",
   "type": "module",
   "license": "MIT",
   "author": "Yassine Lakhdar",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ylakhdar/rspress-plugin-pretext-breaker.git"
+    "url": "git+https://github.com/y-lakhdar/rspress-plugin-pretext-breaker.git"
   },
-  "homepage": "https://github.com/ylakhdar/rspress-plugin-pretext-breaker#readme",
+  "homepage": "https://y-lakhdar.github.io/rspress-plugin-pretext-breaker/",
   "bugs": {
-    "url": "https://github.com/ylakhdar/rspress-plugin-pretext-breaker/issues"
+    "url": "https://github.com/y-lakhdar/rspress-plugin-pretext-breaker/issues"
   },
   "keywords": [
     "rspress",
@@ -48,7 +48,7 @@
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "pack:dry": "pnpm pack --dry-run",
     "clean": "rm -rf dist",
-    "prepublishOnly": "pnpm run clean && pnpm run build",
+    "prepublishOnly": "npm run clean && npm run build",
     "knip": "knip"
   },
   "knip": {
@@ -58,7 +58,7 @@
     }
   },
   "dependencies": {
-    "@ylakhdar/pretext-breaker": "workspace:^"
+    "@ylakhdar/pretext-breaker": "0.1.0"
   },
   "peerDependencies": {
     "@rspress/core": "^2.0.0",

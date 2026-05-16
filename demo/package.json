@@ -1,6 +1,7 @@
 {
   "name": "demo",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "rspress dev",
     "build": "rspress build"

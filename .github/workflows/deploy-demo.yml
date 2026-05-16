@@ -34,11 +34,6 @@ jobs:
         with:
           version: '11.1.1'
 
-      - name: Remove ../breaker workspace entry (not present in CI)
-        run: |
-          sed -i 's/  - \.\.\/breaker//' pnpm-workspace.yaml
-          sed -i 's|"@ylakhdar/pretext-breaker": "workspace:\^"|"@ylakhdar/pretext-breaker": "latest"|' package.json
-
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
 
@@ -50,6 +45,8 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
